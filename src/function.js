@@ -26,7 +26,7 @@ function readGameSaving() {
         }
         resolve(buffer);
       })(data);
-    }, 1000);
+    }, 5000);
   });
 }
 
@@ -45,32 +45,3 @@ export default class GameSavingLoader {
     });
   }
 }
-
-/* export class GameSavingLoader {
-  load() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        const result = 11;
-        resolve(result);
-      }, 1000);
-    //gameSaving.then(result => {return result});
-  })
-}
-}
- */
-
-
-/*   export class GameSavingLoader {
-    load() {
-      async function gameSaving(){
-        const data = await readGameSaving();
-        const gameSavingData =new GameSavingData (data);
-        const str = await gameSavingData.json();
-        try{
-        const result = await JSON.parse(str);
-        return result;
-        }catch{console.log('Ошибка')}
-      }
-      gameSaving();
-    }
-  }   */
