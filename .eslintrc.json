@@ -2,6 +2,7 @@
     "extends": "airbnb-base",
     "rules": {
         "no-unused-vars": "off",
+        "prefer-promise-reject-errors": "off",
         "no-plusplus": "off",
         "class-methods-use-this": "off",
         "no-undef": "off"       
